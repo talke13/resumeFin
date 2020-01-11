@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarik's CV</title>
+	<style>
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<img id="menuimg" class="mimg" src="img_141325.png" onclick="meni()">
+
+<header>
+<ul class="navigation" id="menubar">
+	<li><a href="PersonalInformation.html">Personal Information</a></li>
+
+
+	<li><a href="Education.html">Education</a></li>
+	
+
+	<li><a href="skills.html">Skills</a></li>
+
+
+	<li><a href="langs.html">Languages</a></li>
+
+
+	<li id="other.html"><a>Other</a>
+		<ul id="otherList">
+		<li><a href="interests.html">Interests & photos</a></li>
+		</ul>
+	</li>
+	<li><a href="calc.html">Calculator</a></li>
+	
+</ul>
+</header>
+		<img src="img5.jpg" alt="image5" align="middle" width="800px" height="600px">
+		<footer>
+		<ul class="smlist">
+	<li><a href="https://www.instagram.com/don_talke/"> <img src="igLogo.png" alt="instagram" width="110px" height="110px"></a>
+	</li>
+
+ 	<li><a href="https://www.facebook.com/talke666"> <img src="fbLogo.png" alt="fbLogo" width="110px" height="110px"></a></li>
+
+ 	<li><a href=“mailto:https://mail.google.com/mail/ca/u/0/#inbox?compose=new”> <img src="gmail.png" width="110px" height="110px" alt="gmail"></a></li>
+</ul>
+</footer>
+</body>
+<script>
+	function meni(){
+		var menu=document.getElementById("menubar");
+		var img=document.getElementById("menuimg");
+		if (menu.style.display === "none") {
+   			 menu.style.display = "block";
+  		} 
+		else {
+    		menu.style.display = "none";
+  		}
+	}
+</script>
+</html>

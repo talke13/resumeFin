@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interests</title>
+</head>
+
+<body>
+
+	<link rel="stylesheet" type="text/css" href="interests.css">
+
+		<h1 class="round">Interests</h1>
+		<hr>
+
+
+		<div class="row">
+  <div class="column" style="background-color:#b3d1ff;">
+    <h2>Visited in 2019.:</h2>
+    <p>Turkey:</p>
+	<p>Istanbul</p>
+	<p>Ankara</p>
+	<p>Serbia:</p>
+	<p>Belgrad</p>
+	<p>Novi Sad</p>
+	<p>Niš</p>
+	<p>France:</p>
+	<p>Paris</p>
+	<p>Marseille</p>
+	<p>Switzerland:</p>
+	<p>Zurich</p>
+	<p>St Gallen</p>
+
+  </div>
+  <div class="column" style="background-color:#b3d1ff;">
+    <h2>Visited in 2018:</h2>
+    <p>Czechoslovakia:</p>
+    <p>Prague</p>
+    <p>Austria:</p>
+	<p>Vienna </p>
+	<p>Graz</p>
+	<p>Hungary:</p>
+	<p>Budempest</p>
+
+
+  </div>
+  <div class="column" style="background-color:#b3d1ff;">
+    <h2>Visited in 2017:</h2>
+   <p>Croatia:</p>
+	<p>Zagreb</p>
+	<p>Mediterian seaside of Croatia</p>
+	<p>Germay:</p>
+	<p>Berlin</p>
+	<p>Dresden</p>
+	<p>Stuttgart</p>
+	<p>Boeblingen</p>
+	<p>Koln</p>
+	<p>Austria:</p>
+	<p>Vienna </p>
+	<p>Graz</p>
+  </div>
+</div>
+
+		
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="img1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="img2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="img3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="img4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="img5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="img6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="DSC_0009.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="img8.JPG" style="width:100%">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+		<p><a href="index.html" style="color:black"> Click me to return to the front page!</a></p>
+</body>
+</html>
